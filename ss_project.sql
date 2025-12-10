@@ -17,8 +17,6 @@ as
 (select order_date,customer_name,voucher_no, GSTIN, Gross_Total from ss_Sales 
 order by 1);
 
-drop table ss_sales;
-
 alter table ss_sales
 modify column order_date Date;
 
